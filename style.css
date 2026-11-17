@@ -1,0 +1,79 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1a84b1bc;
+    margin: 0;
+    padding: 30px 15px;
+}
+.planner{
+    max-width: 500px;
+    margin:auto;
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px black;
+}
+h1{
+    color: #6545c5;
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: #666;
+}
+.task-input{
+    display:flex;
+    gap: 8px;
+}
+input{
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+button{
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background: #6545c5;
+    color: white;
+    cursor: pointer;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 12px;
+    background: #f7f5ff;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+li span{
+    flex: 1;
+}
+li.completed span{
+    text-decoration:line-through;
+    color: #888;
+}
+l1.delete{
+    background: #d94b61;
+}
+.filters{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.filters button.active{
+    background: #3f2a86;
+    outline: 2px solid #c8b9ff;
+}
+li[hidden]{
+    display: none !important;
+}
